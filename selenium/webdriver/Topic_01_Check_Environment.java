@@ -16,7 +16,7 @@ public class Topic_01_Check_Environment {
 	String osName = System.getProperty("os.name");
 
 	@BeforeClass
-	
+	// 123456
 	public void beforeClass() {
 		if (osName.contains("Windows")) {
 			System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
