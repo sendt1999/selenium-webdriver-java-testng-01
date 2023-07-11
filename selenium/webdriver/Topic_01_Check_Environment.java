@@ -17,7 +17,7 @@ public class Topic_01_Check_Environment {
 
 	@BeforeClass
 	
-	//11111
+	
 	
 	public void beforeClass() {
 		if (osName.contains("Windows")) {
