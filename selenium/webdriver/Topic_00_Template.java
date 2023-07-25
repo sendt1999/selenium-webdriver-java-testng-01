@@ -2,10 +2,8 @@ package webdriver;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -16,8 +14,6 @@ public class Topic_00_Template {
 	String osName = System.getProperty("os.name");
 
 	@BeforeClass
-	
-	
 	
 	public void beforeClass() {
 		if (osName.contains("Windows")) {
@@ -33,17 +29,17 @@ public class Topic_00_Template {
 	}
 
 	@Test
-	public void TC_01_ {
+	public void TC_01_() {
 		
 	}
 
 	@Test
-	public void TC_02_ {
+	public void TC_02_() {
 		
 	}
 
 	@Test
-	public void TC_03_ {
+	public void TC_03_() {
 		
 	}
 
