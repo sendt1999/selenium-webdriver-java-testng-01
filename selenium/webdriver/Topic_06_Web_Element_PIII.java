@@ -8,7 +8,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class Topic_00_Template {
+public class Topic_06_Web_Element_PIII {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 	String osName = System.getProperty("os.name");
@@ -29,17 +29,22 @@ public class Topic_00_Template {
 	}
 
 	@Test
-	public void TC_01_() {
+	public void Login_01_Empty_Email_And_Password() {
 		
 	}
 
 	@Test
-	public void TC_02_() {
+	public void Login_02_Validate_Email() {
 		
 	}
 
 	@Test
-	public void TC_03_() {
+	public void Login_03_Password_Less_Than_6_char() {
+		
+	}
+	
+	@Test
+	public void Login_04_Incorrect_Email_Password() {
 		
 	}
 	
