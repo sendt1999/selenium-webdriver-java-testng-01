@@ -41,9 +41,9 @@ public class Topic_08_Default_Dropdown {
 		month = "September";
 		year = "1997";
 		
-		countryName = "Sen DT";
-		provinceName = "Florrida";
-		cityName = "Miami";
+		countryName = "Aruba";
+		provinceName = "Florrida 123";
+		cityName = "Aruba";
 		addressName = "123 PO Box";
 		postalCode = "33111";
 		phoneNumber = "+13055555584";
@@ -89,15 +89,15 @@ public class Topic_08_Default_Dropdown {
 
 	@Test
 	public void TC_02_Add_Address() {
-		driver.findElement(By.xpath("//li[@class='customer-addresses active']/a")).click();
-		driver.findElement(By.xpath("//button[@class='button-1 add-address-button']")).click();
+		driver.findElement(By.cssSelector("li.customer-addresses>a")).click();
+		driver.findElement(By.cssSelector("button.add-address-button")).click();
 		
 		driver.findElement(By.id("Address_FirstName")).sendKeys(firstname);
 		driver.findElement(By.id("Address_LastName")).sendKeys(lastName);
 		driver.findElement(By.id("Address_Email")).sendKeys(emailAddress);
 		driver.findElement(By.id("Address_Company")).sendKeys(companyName);
-		new Select(driver.findElement(By.name("Address_CountryId"))).selectByVisibleText(countryName);
-		new Select(driver.findElement(By.name("Address_StateProvinceId"))).selectByVisibleText(provinceName);
+		new Select(driver.findElement(By.id("Address_CountryId"))).selectByVisibleText(countryName);
+		// new Select(driver.findElement(By.id("Address_StateProvinceId"))).selectByVisibleText(provinceName);
 		driver.findElement(By.id("Address_City")).sendKeys(cityName);
 		driver.findElement(By.id("Address_Address1")).sendKeys(addressName);
 		driver.findElement(By.id("Address_ZipPostalCode")).sendKeys(postalCode);
@@ -111,7 +111,7 @@ public class Topic_08_Default_Dropdown {
 		Assert.assertEquals(driver.findElement(By.cssSelector("li.company")).getText(), companyName);
 		Assert.assertEquals(driver.findElement(By.cssSelector("li.address1")).getText(), addressName);
 		Assert.assertTrue(driver.findElement(By.cssSelector("li.city-state-zip")).getText().contains(cityName));
-		Assert.assertTrue(driver.findElement(By.cssSelector("li.city-state-zip")).getText().contains(projectPath));
+		// Assert.assertTrue(driver.findElement(By.cssSelector("li.city-state-zip")).getText().contains(projectPath));
 		Assert.assertTrue(driver.findElement(By.cssSelector("li.city-state-zip")).getText().contains(postalCode));
 		Assert.assertEquals(driver.findElement(By.cssSelector("li.country")).getText(), countryName);
 	}
