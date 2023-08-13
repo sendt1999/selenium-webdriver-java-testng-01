@@ -44,11 +44,15 @@ public class Topic_07_Textbox_TextArea {
 		driver.findElement(By.cssSelector("button.orangehrm-login-button")).click();
 		sleepInSecond(5);
 
-		driver.findElement(By.xpath("//a[@class='oxd-main-menu-item active']")).click();
-		sleepInSecond(5);
+		/*
+		 * driver.findElement(By.xpath("//a[@class='oxd-main-menu-item active']")).click
+		 * (); sleepInSecond(3);
+		 * 
+		 * driver.findElement(By.xpath("//a[text()='Add Employee']")).click();
+		 * sleepInSecond(10);
+		 */
 
-		driver.findElement(By.xpath("//a[text()='Add Employee']")).click();
-		sleepInSecond(10);
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/pim/addEmployee");
 
 		driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys("Automation");
 		driver.findElement(By.xpath("//input[@name='lastName']")).sendKeys("FC");
@@ -77,9 +81,7 @@ public class Topic_07_Textbox_TextArea {
 		Assert.assertEquals(driver.findElement(By.name("firstName")), "Automation");
 		Assert.assertEquals(driver.findElement(By.name("lastName")), "FC");
 		Assert.assertEquals(
-				driver.findElement(By.xpath("//label[text()='Employee Id']/parent::div/following-sibling::div/input\""))
-						.getAttribute("value"),
-				employeeID);
+		driver.findElement(By.xpath("//label[text()='Employee Id']/parent::div/following-sibling::div/input\"")).getAttribute("value"), employeeID);
 
 		driver.findElement(By.xpath("//a[text()='Immigration']")).click();
 		sleepInSecond(3);
