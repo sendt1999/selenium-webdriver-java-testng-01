@@ -35,7 +35,7 @@ public class Topic_09_Custom_Dropdown {
 
 	}
 
-	// @Test
+	@Test
 	public void TC_01_JQuery() {
 		
 		driver.get("http://jqueryui.com/resources/demos/selectmenu/default.html");
@@ -90,7 +90,7 @@ public class Topic_09_Custom_Dropdown {
 	 * }
 	 */
 
-	//@Test
+	@Test
 	public void TC_02_ReactJS() {
 		
 		driver.get("https://react.semantic-ui.com/maximize/dropdown-example-selection/");
@@ -112,7 +112,7 @@ public class Topic_09_Custom_Dropdown {
 		
 	}
 		
-	//@Test
+	@Test
 	public void TC_03_VueJS() {
 		
 		driver.get("https://mikerodham.github.io/vue-dropdowns/");
@@ -131,7 +131,7 @@ public class Topic_09_Custom_Dropdown {
 		
 	}
 	
-	@Test
+	 @Test
 	public void TC_04_Editable() {
 		
 		driver.get("https://react.semantic-ui.com/maximize/dropdown-example-search-selection/");
