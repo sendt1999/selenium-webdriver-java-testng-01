@@ -16,7 +16,7 @@ public class Topic_02_Data_Type {
 		// Kích thước/ độ rộng dể lưu trữ dữ liệu từ nhỏ đến lớn
 		byte bNumber = 127;
 		
-		short sNumber = 322000;
+		short sNumber = 32200;
 		
 		int iNumber = 499233299;
 		
@@ -54,7 +54,7 @@ public class Topic_02_Data_Type {
 		List<WebElement> checkboxes = driver.findElements(By.cssSelector(""));
 		
 		// Map
-		Map<String, Interger> student = HashMap<String, Interger>();
+		Map<String, Interger> student = HashMap<String, Interger>("");
 		
 	}
 
