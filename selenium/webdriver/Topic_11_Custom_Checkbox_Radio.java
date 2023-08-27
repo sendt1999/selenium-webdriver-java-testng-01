@@ -37,7 +37,7 @@ public class Topic_11_Custom_Checkbox_Radio {
 	@Test
 	public void TC_01_() {
 		driver.get("https://tiemchungcovid19.gov.vn/portal/register-person");
-		sleepInSecond(3);
+		sleepInSecond(5);
 
 		/* CASE 1 */
 		// Thẻ input bị che nên không thao tác được
@@ -46,6 +46,7 @@ public class Topic_11_Custom_Checkbox_Radio {
 
 		// Thao tác chọn
 		driver.findElement(By.xpath("//div[text()='Đăng ký cho người thân']/preceding-sibling::div/input")).click();
+		sleepInSecond(3);
 
 		// Verify đã chọn thành công
 		Assert.assertTrue(
@@ -66,11 +67,10 @@ public class Topic_11_Custom_Checkbox_Radio {
 
 		// Thao tác chọn
 		driver.findElement(By.xpath("//div[text()='Đăng ký cho người thân']/parent::label")).click();
-		sleepInSecond(3);
+		sleepInSecond(5);
 
 		// Verify đã chọn thành công
-		Assert.assertTrue(
-				driver.findElement(By.xpath("//div[text()='Đăng ký cho người thân']/parent::label")).isSelected());
+		Assert.assertTrue(driver.findElement(By.xpath("//div[text()='Đăng ký cho người thân']/parent::label")).isSelected());
 
 		// Thẻ span/ div/ label luôn luôn trả về false
 
