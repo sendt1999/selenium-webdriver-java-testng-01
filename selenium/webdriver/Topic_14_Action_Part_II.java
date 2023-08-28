@@ -88,7 +88,7 @@ public class Topic_14_Action_Part_II {
 		// Nhả phím Ctrl ra
 		action.keyUp(key).perform();
 		
-		sleepInSecond(5);
+		sleepInSecond(10);
 		
 		List<WebElement> listSelectNumber = driver.findElements(By.cssSelector("ol#selectable>li.ui-selected"));
 		Assert.assertEquals(listSelectNumber.size(), 4);
