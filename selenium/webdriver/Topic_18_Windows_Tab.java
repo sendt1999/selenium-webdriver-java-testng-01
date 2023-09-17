@@ -32,7 +32,7 @@ public class Topic_18_Windows_Tab {
 		// driver.get("https://www.facebook.com/");
 	}
 
-	// @Test
+	@Test
 	public void TC_01_Github_With_Tow_Window_Tab() {
 		// Driver đang taaij trang Github
 		driver.get("https://automationfc.github.io/basic-form/index.html");
@@ -63,7 +63,7 @@ public class Topic_18_Windows_Tab {
 
 	}
 
-	// @Test
+	@Test
 	public void TC_02_Github_Greater_Tow_Window_Tab() {
 		// Driver đang tại trang Github
 		driver.get("https://automationfc.github.io/basic-form/index.html");
