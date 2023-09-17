@@ -36,7 +36,7 @@ public class Topic_17_Frame_Iframe {
 
 	}
 
-	@Test
+	 @Test
 	public void TC_01_Iframe() {
 		driver.get("https://skills.kynaenglish.vn/");
 
@@ -100,17 +100,17 @@ public class Topic_17_Frame_Iframe {
 		driver.get("https://netbanking.hdfcbank.com/netbanking/");
 		
 		// Switch frame
-		driver.switchTo().frame("");
+		driver.switchTo().frame("login_page");
 		
 		// Thao tác với UserID
-		driver.findElement(By.name("https://netbanking.hdfcbank.com/netbanking/")).sendKeys("123456");
-		driver.findElement(By.cssSelector("div.lablefield.blank")).click();
-		sleepInSecond(5);
+		driver.findElement(By.name("fldLoginUserId")).sendKeys("Sentest");
+		driver.findElement(By.cssSelector("a.login-btn")).click();
+		sleepInSecond(3);
 		
 		// Switch về defaul
 		driver.switchTo().defaultContent();
 		
-		Assert.assertTrue(driver.findElement(By.id("")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.id("keyboard")).isDisplayed());
 
 	}
 

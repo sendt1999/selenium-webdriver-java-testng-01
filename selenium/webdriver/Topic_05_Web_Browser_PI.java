@@ -123,7 +123,7 @@ public class Topic_05_Web_Browser_PI {
 	    
 	    Window win = opt.window();
 	    win.fullscreen();
-	    win.maximize(); //**
+	    win.maximize(); 
 	    
 	    // Test GUI: Font/ Size/ Color/ Position/ Location/...
 	    win.getMousePosition();

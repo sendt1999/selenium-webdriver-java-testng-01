@@ -48,7 +48,7 @@ public class Topic_16_Popup_Part_III_Random_Popup {
 	// Nếu như nó không hiển thị thì qua step tiếp theo luôn
 	
 
-	@Test
+	 @Test
 	public void TC_01_Random_Popup_In_DOM_Java_Code_Geeks() {
 		driver.get("https://www.javacodegeeks.com/");
 		sleepInSecond(30);
@@ -93,7 +93,7 @@ public class Topic_16_Popup_Part_III_Random_Popup {
 		By Popup = By.cssSelector("div.tve_p_lb_inner");
 
 		// Hàm isDisplayed() chỉ check cho element có trong DOM
-		// Không có trong DOM thì không check được -> Fail ngay ddonanj element rồi
+		// Không có trong DOM thì không check được -> Fail ngay đoạn element rồi
 		// Vì nó luôn có trong DOM nên có thể dùng hàm isDisplayed() để kiểm tra được
 		if (driver.findElement(Popup).isDisplayed()) {
 			// Close popup này đi hoặc click vào link đẻ join các Group Zalo
@@ -108,7 +108,7 @@ public class Topic_16_Popup_Part_III_Random_Popup {
 
 	}
     
-	@Test
+	 @Test
 	public void TC_03_Fixed_Popup_In_DOM() {
 		driver.get("https://dehieu.vn/");
 		sleepInSecond(10);
