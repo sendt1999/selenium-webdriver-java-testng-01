@@ -119,15 +119,6 @@ public class Topic_19_Javascript_Executor {
 
 	}
 
-	@Test
-	public void TC_03_() {
-
-	}
-
-	/*
-	 * public void randomNumber() { Random rand = new Random(); rand.nextInt(99999);
-	 * }
-	 */
 	public Object executeForBrowser(String javaScript) {
 		return jsExecutor.executeScript(javaScript);
 	}
