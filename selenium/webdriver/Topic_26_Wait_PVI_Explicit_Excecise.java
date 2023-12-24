@@ -49,7 +49,7 @@ public class Topic_26_Wait_PVI_Explicit_Excecise {
 	
 	}
 
-	// @Test
+	@Test
 	public void TC_01_Telerick() {
 		System.out.println("0.1 - Start: " + getDateTimeNow());
 		driver.get("https://demos.telerik.com/aspnet-ajax/ajaxloadingpanel/functionality/explicit-show-hide/defaultcs.aspx");

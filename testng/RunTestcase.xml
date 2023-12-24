@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+
+<groups>
+	<run>>
+		<include name="pay" />
+	</run>
+</groups>
+  <test name="Test">
+    <classes>
+      <class name="group.User"/>
+      <class name="group.Payment_Type"/>
+      <class name="group.Payment_Address"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
